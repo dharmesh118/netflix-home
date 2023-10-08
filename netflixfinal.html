@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone</title>
+    <style>
+     /* Reset some default styles */
+body, h1, h2, h3, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+.header {
+    background-color: #111;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.nav li {
+    margin-right: 20px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Hero Section Styles */
+.hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.hero-content {
+    z-index: 1;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    padding: 15px 30px;
+    background-color: #e50914;
+    color: white;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+/* Content Blocks Styles */
+.content {
+    padding: 40px;
+}
+
+.category-list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.category {
+    flex: 0 0 30%;
+    text-align: center;
+}
+
+.category img {
+    width: 100%;
+    max-height: 80%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.category 1 img {
+    width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+/* Footer Styles */
+.footer {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+</style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZSI4VIfKBpuE4shZ91l5XhbmR9fvfBV9cIIhEmUTd&s" alt="Netflix Logo">
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">TV Shows</a></li>
+                <li><a href="#">Movies</a></li>
+                <li><a href="#">New & Popular</a></li>
+                <li><a href="#">My List</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <!-- Background Video or Image -->
+        <video src="" autoplay muted loop></video>
+        <!-- Content -->
+        <div class="hero-content">
+            <h1>Unlimited movies, TV shows, and more.</h1>
+            <p>Watch anywhere. Cancel anytime.</p>
+            <button class="cta-button">Sign Up</button>
+        </div>
+    </section>
+
+    <!-- Content Blocks (Movie Categories, etc.) -->
+    <section class="content">
+        <h2>Browse by Category</h2>
+        <div class="category-list">
+            <!-- Example Content Blocks -->
+            <div class="category">
+                <img src="https://e0.pxfuel.com/wallpapers/303/205/desktop-wallpaper-extraction-chris-hemsworth-netflix-action-movie-poster-revealed-netflix-movies.jpg" style=" height = 10%" alt="Category 1">
+                <h3>Action</h3>
+            </div>
+            <div class="category 1">
+                <img src="https://hips.hearstapps.com/hmg-prod/images/comedy-movies-netflix-the-spy-next-door-1666972725.jpeg?crop=0.862xw:0.728xh;0.0612xw,0.104xh&resize=980:*" alt="Category 2">
+                <h3>Comedy</h3>
+            </div>
+            <!-- Add more categories as needed -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2023 Netflix Clone</p>
+    </footer>
+</body>
+</html>
